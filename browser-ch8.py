@@ -1,5 +1,3 @@
-# python3 tests/run.py chapter
-# pull updated tests: git submodule update --remote
 import sys
 import tkinter
 import tkinter.font
@@ -132,7 +130,6 @@ class Tab:
             self.rules.extend(CSSParser(body).parse())
         self.render()
 
-    # Ch8 core
     def render(self):
         style(self.nodes, sorted(self.rules, key=cascade_priority))
         self.document = DocumentLayout(self.nodes)
