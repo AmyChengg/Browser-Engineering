@@ -1,21 +1,3 @@
-# need to set up python environment in terminal to test code:
-# cse493x-24sp-amyc1 python3 browser.py https://example.org
-# python3 browser.py https://browser.engineering/examples/xiyouji.html
-# python3 tests/run.py chapter
-
-#test on terminal: python3 tests/run.py
-# pull updated tests: git submodule update --remote
-
-# !/usr/bin/env python3
-# python 3.12 virtual env: usr/bin/local/env python3
-
-# Request on terminal:
-# HTTP/1.0 200 OK
-# Age: 236949
-# Cache-Control: max-age=604800
-
-# import socket
-# import ssl 
 import sys
 import tkinter
 import tkinter.font
