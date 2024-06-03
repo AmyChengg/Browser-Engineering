@@ -1,0 +1,31 @@
+<!-- Chapter9 -->
+<!doctype html>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="widget.css" />
+
+<figure id="widget">
+  <canvas id="canvas" width="352" height="160"></canvas>
+</figure>
+
+<script type="module" src="rt.js"></script>
+<script type="module" src="lab9.js"></script>
+<script type="module">
+import { rt_constants, socket, Widget } from "./rt.js";
+import { constants } from "./lab9.js";
+import { Browser } from "./lab8.js";
+import { handle_connection } from "./server9.js";
+import { URL } from "./lab8.js";
+
+socket.accept(8000, handle_connection);
+rt_constants.ROOT_CANVAS = document.querySelector("#canvas");
+
+let widget = new Widget();
+widget.run(async function() {
+    constants.WIDTH = window.innerWidth;
+    let url = "https://localhost:8000/";
+    let b = await (new Browser()).init();
+    await b.new_tab(await (new URL().init(url)))
+});
+widget.next();
+</script>
