@@ -54,9 +54,6 @@ def do_request(session, method, url, headers, body):
         return "200 OK", show_comments(session)
     elif method == "GET" and url == "/login":
         return "200 OK", login_form(session)
-    # elif method == "GET" and url == "/comment.js":
-    #     with open("comment.js") as f:
-    #         return "200 OK", f.read()
     elif method == "POST" and url == "/add":
         params = form_decode(body)
         add_entry(session, params)
