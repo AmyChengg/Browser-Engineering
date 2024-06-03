@@ -46,7 +46,6 @@ Object.defineProperty(Node.prototype, 'innerHTML', {
     }
 });
 
-//ch10
 function XMLHttpRequest() {}
 
 XMLHttpRequest.prototype.open = function(method, url, is_async) {
@@ -59,7 +58,7 @@ XMLHttpRequest.prototype.send = function(body) {
         this.method, this.url, body);
 }
 
-// ch10 script access
+// ch10 script access exercise
 Object.defineProperty(document, "cookie", {
     get: function(){
         return call_python("document_get_cookie")
