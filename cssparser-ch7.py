@@ -1,4 +1,4 @@
-# # CSS Grammar
+# # CSS Grammar explained below
 # # css file ::= sequence of rules
 # # rule ::= guard selector '{'body'}'
 # # body ::= sequence of pair separated by ';'
