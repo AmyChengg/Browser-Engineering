@@ -53,7 +53,7 @@ class InputLayout:
             self.x = self.parent.x
 
         self.height = self.font.metrics("linespace")
-        #ch10 new-inputs
+        #ch10 new inputs exercise
         type = self.node.attributes.get("type", "")
         if type == "checkbox":
             self.width = 16 
