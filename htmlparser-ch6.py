@@ -1,8 +1,3 @@
-# from browser import *
-# from url import *
-# from layout import *
-# from cssparser import *
-
 class Text:
     def __init__(self, text, parent):
         self.text = text
