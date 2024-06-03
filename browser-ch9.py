@@ -1,5 +1,3 @@
-# python3 tests/run.py chapter
-# pull updated tests: git submodule update --remote
 import sys
 import tkinter
 import tkinter.font
@@ -141,7 +139,6 @@ class Tab:
         self.document = DocumentLayout(self.nodes)
         self.document.layout()
         self.display_list = []
-        # paint_tree(self.document, self.display_list)
 
     def keypress(self, char):
         if self.focus:
