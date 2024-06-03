@@ -86,10 +86,10 @@ class DrawLine:
         self.color = color
         self.thickness = thickness
 
-        self.top = self.rect.top #necessary?
-        self.left = self.rect.left #necessary?
-        self.bottom = self.rect.bottom #necessary?
-        self.right = self.rect.right #necessary?
+        self.top = self.rect.top
+        self.left = self.rect.left 
+        self.bottom = self.rect.bottom 
+        self.right = self.rect.right
 
     def execute(self, scroll, canvas):
         canvas.create_line(
