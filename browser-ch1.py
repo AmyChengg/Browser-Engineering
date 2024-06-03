@@ -1,8 +1,3 @@
-# need to set up python environment in terminal to test code:
-# cse493x-24sp-amyc1 python3 browser.py https://example.org
-
-#test on terminal: python3 tests/run.py
-
 import socket
 import ssl 
 import tkinter
@@ -221,22 +216,6 @@ class Browser:
         #DO SOMETHING WITH THIS
         self.display_list = layout(text)
         self.draw()
-
-        # cursor_x, cursor_y = HSTEP, VSTEP
-        # for c in text: 
-        #     self.canvas.create_text(100, 100, text=c)
-        #     cursor_x += HSTEP
-
-        # # wrap the text once we reach the edge of the screen:
-        # if cursor_x >= WIDTH - HSTEP:
-        #     cursor_y += VSTEP
-        #     cursor_x = HSTEP
-
-        # self.canvas.create_rectangle(10, 20, 400, 300)
-        # self.canvas.create_oval(100, 100, 150, 150)
-        # self.canvas.create_text(200, 150, text="hello")
-        # for c in text:
-        #     self.canvas.create_text(100, 100, text=c) #draw that text character by character
     
     # draw needs to loop through it and draw each character. Since draw does need access to the canvas
     # The page coordinate y then has screen coordinate y - self.scroll:
@@ -245,14 +224,11 @@ class Browser:
 
         for page_x, page_y, c in self.display_list:
             screen_x = page_x
-            #screen_y = page_y #professor had page_y - self.scroll but I did it below
         # skip drawing characters that are offscreen to speed up scrolling
             screen_y = page_y - self.scroll
             if screen_y > HEIGHT: continue
-            #if screen_y > self.scroll + HEIGHT: continue # professor did not add self.scroll
             if screen_y + VSTEP < self.scroll: continue	 
             self.canvas.create_text(screen_x, screen_y, text=c)
-            # self.canvas.create_text(screen_x, screen_y - self.scroll, text=c)
 
 def layout(text):
     display_list = []
@@ -273,9 +249,6 @@ def layout(text):
         cursor_x += HSTEP
 
     return display_list
-
-# to check optimization on terminal: python -m cProfile browser.py https://browser.engineering/examples/xiyouji.html > profile.txt
-# then open profile.txt in tests folder and find "draw" = 0.05ms per call
     
 # display HTML text
 def lex(body):
@@ -288,14 +261,11 @@ def lex(body):
             in_tag = False
         elif not in_tag:
             text += c 
-            # print(c, end="")
     return text
 
-# Add the following code to run load from the command line:
-
+# To run load from the command line
 if __name__ == "__main__":
     import sys
-    # load(URL(sys.argv[1]))
 
         # The first line is Python’s version of a main function, run only 
         # when executing this script from the command line. The code reads
