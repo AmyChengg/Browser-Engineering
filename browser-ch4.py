@@ -1,21 +1,3 @@
-# need to set up python environment in terminal to test code:
-# cse493x-24sp-amyc1 python3 browser.py https://example.org
-# python3 browser.py https://browser.engineering/examples/xiyouji.html
-# python3 tests/run.py chapter
-
-#test on terminal: python3 tests/run.py
-# pull updated tests: git submodule update --remote
-
-# !/usr/bin/env python3
-# python 3.12 virtual env: usr/bin/local/env python3
-
-# Request on terminal:
-# HTTP/1.0 200 OK
-# Age: 236949
-# Cache-Control: max-age=604800
-
-# import socket
-# import ssl 
 import tkinter
 import tkinter.font
 
@@ -38,10 +20,10 @@ class Browser:
         self.window.bind("<Down>", self.scrolldown) # Allows user to scroll with down arrow key
         # Exercise-resizing chapter2-3
         self.body = ""
-        self.canvas.pack(fill='both', expand=1) #self.canvas.pack()
+        self.canvas.pack(fill='both', expand=1) 
         self.scroll = 0
 
-    #event handler
+    # event handler
     def scrolldown(self, e):
         self.scroll += SCROLL_STEP
         self.draw()
@@ -67,7 +49,6 @@ class Browser:
 
             self.canvas.create_text(screen_x, screen_y, text = word, font=font, anchor='nw')
 
-# Function in layout.py
 def lex(body):
     out = []
     buffer = ""
