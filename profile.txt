@@ -1,0 +1,409 @@
+         16694 function calls (16570 primitive calls) in 2.238 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     12/1    0.000    0.000    2.238    2.238 {built-in method builtins.exec}
+        1    0.000    0.000    2.238    2.238 browser.py:1(<module>)
+     20/5    0.000    0.000    1.448    0.290 <frozen importlib._bootstrap>:1349(_find_and_load)
+     20/5    0.000    0.000    1.448    0.290 <frozen importlib._bootstrap>:1304(_find_and_load_unlocked)
+     20/5    0.000    0.000    1.445    0.289 <frozen importlib._bootstrap>:911(_load_unlocked)
+     10/5    0.000    0.000    1.444    0.289 <frozen importlib._bootstrap_external>:989(exec_module)
+    50/10    0.000    0.000    1.435    0.143 <frozen importlib._bootstrap>:480(_call_with_frames_removed)
+       20    0.000    0.000    1.363    0.068 <frozen importlib._bootstrap>:806(module_from_spec)
+       10    0.000    0.000    1.362    0.136 <frozen importlib._bootstrap_external>:1287(create_module)
+       10    1.362    0.136    1.362    0.136 {built-in method _imp.create_dynamic}
+        1    0.000    0.000    0.762    0.762 browser.py:217(load)
+        1    0.000    0.000    0.762    0.762 browser.py:64(request)
+        1    0.000    0.000    0.454    0.454 ssl.py:449(wrap_socket)
+        1    0.000    0.000    0.454    0.454 ssl.py:956(_create)
+        1    0.000    0.000    0.417    0.417 browser.py:190(__init__)
+        1    0.000    0.000    0.415    0.415 __init__.py:2325(__init__)
+        1    0.414    0.414    0.414    0.414 {built-in method _tkinter.create}
+        1    0.000    0.000    0.389    0.389 ssl.py:441(_encode_hostname)
+      5/4    0.000    0.000    0.389    0.097 {method 'encode' of 'str' objects}
+        1    0.000    0.000    0.389    0.389 __init__.py:71(search_function)
+        1    0.000    0.000    0.389    0.389 {built-in method builtins.__import__}
+        1    0.000    0.000    0.386    0.386 idna.py:1(<module>)
+        1    0.000    0.000    0.383    0.383 stringprep.py:1(<module>)
+        1    0.001    0.001    0.382    0.382 socket.py:1(<module>)
+        1    0.000    0.000    0.350    0.350 selectors.py:1(<module>)
+        1    0.000    0.000    0.346    0.346 ssl.py:1(<module>)
+        1    0.283    0.283    0.283    0.283 {method 'connect' of '_socket.socket' objects}
+        1    0.000    0.000    0.272    0.272 datetime.py:1(<module>)
+        1    0.000    0.000    0.062    0.062 ssl.py:1313(do_handshake)
+        1    0.062    0.062    0.062    0.062 {method 'do_handshake' of '_ssl._SSLSocket' objects}
+  259/255    0.025    0.000    0.050    0.000 {built-in method __new__ of type object at 0x10732f8d0}
+        1    0.002    0.002    0.048    0.048 __init__.py:1(<module>)
+       69    0.002    0.000    0.029    0.000 {built-in method builtins.__build_class__}
+       16    0.000    0.000    0.026    0.002 enum.py:515(__new__)
+        2    0.000    0.000    0.025    0.013 enum.py:249(__set_name__)
+        4    0.000    0.000    0.025    0.006 ssl.py:399(__new__)
+        4    0.025    0.006    0.025    0.006 {built-in method _ssl.txt2obj}
+        1    0.000    0.000    0.025    0.025 ssl.py:683(create_default_context)
+        1    0.000    0.000    0.024    0.024 ssl.py:430(__new__)
+       10    0.000    0.000    0.018    0.002 <frozen importlib._bootstrap_external>:1062(get_code)
+       20    0.000    0.000    0.015    0.001 <frozen importlib._bootstrap>:1240(_find_spec)
+       20    0.000    0.000    0.014    0.001 <frozen importlib._bootstrap_external>:1517(find_spec)
+       20    0.000    0.000    0.014    0.001 <frozen importlib._bootstrap_external>:1488(_get_spec)
+       10    0.000    0.000    0.012    0.001 <frozen importlib._bootstrap_external>:1183(get_data)
+       66    0.001    0.000    0.010    0.000 <frozen importlib._bootstrap_external>:1590(find_spec)
+       10    0.009    0.001    0.009    0.001 {method 'read' of '_io.BufferedReader' objects}
+        1    0.000    0.000    0.009    0.009 base64.py:1(<module>)
+       10    0.001    0.000    0.008    0.001 enum.py:906(_convert_)
+       15    0.003    0.000    0.007    0.000 enum.py:1682(convert_class)
+      101    0.000    0.000    0.007    0.000 <frozen importlib._bootstrap_external>:140(_path_stat)
+      105    0.007    0.000    0.007    0.000 {built-in method posix.stat}
+       23    0.000    0.000    0.006    0.000 <frozen importlib._bootstrap_external>:159(_path_isfile)
+       24    0.000    0.000    0.006    0.000 <frozen importlib._bootstrap_external>:150(_path_is_mode_type)
+       10    0.001    0.000    0.005    0.000 <frozen importlib._bootstrap_external>:751(_compile_bytecode)
+       10    0.004    0.000    0.004    0.000 {built-in method marshal.loads}
+       84    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap_external>:1466(_path_importer_cache)
+       10    0.000    0.000    0.004    0.000 <frozen importlib._bootstrap_external>:1295(exec_module)
+        1    0.000    0.000    0.004    0.004 struct.py:1(<module>)
+       18    0.003    0.000    0.003    0.000 {built-in method posix.getcwd}
+       10    0.003    0.000    0.003    0.000 {built-in method _imp.exec_dynamic}
+       10    0.003    0.000    0.003    0.000 {built-in method _io.open_code}
+        1    0.002    0.002    0.002    0.002 {method '_wrap_socket' of '_ssl._SSLContext' objects}
+        3    0.000    0.000    0.002    0.001 __init__.py:226(compile)
+        3    0.000    0.000    0.002    0.001 __init__.py:280(_compile)
+        3    0.000    0.000    0.002    0.001 _compiler.py:740(compile)
+        5    0.002    0.000    0.002    0.000 {method 'call' of '_tkinter.tkapp' objects}
+        1    0.000    0.000    0.002    0.002 __init__.py:2754(__init__)
+        1    0.000    0.000    0.002    0.002 __init__.py:2636(__init__)
+        4    0.001    0.000    0.002    0.000 __init__.py:355(namedtuple)
+       20    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:416(__enter__)
+        3    0.000    0.000    0.001    0.000 _compiler.py:573(_code)
+      301    0.001    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:126(_path_join)
+      234    0.000    0.000    0.001    0.000 {built-in method builtins.setattr}
+       20    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:304(acquire)
+      260    0.001    0.000    0.001    0.000 enum.py:837(__setattr__)
+     1862    0.001    0.000    0.001    0.000 {method 'startswith' of 'str' objects}
+       20    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:733(_init_module_attrs)
+        6    0.001    0.000    0.001    0.000 _compiler.py:243(_optimize_charset)
+        4    0.001    0.000    0.001    0.000 {built-in method builtins.eval}
+        3    0.000    0.000    0.001    0.000 _parser.py:969(parse)
+        3    0.000    0.000    0.001    0.000 _compiler.py:511(_compile_info)
+      5/3    0.000    0.000    0.001    0.000 _parser.py:452(_parse_sub)
+      5/3    0.000    0.000    0.001    0.000 _parser.py:512(_parse)
+      247    0.000    0.000    0.001    0.000 socket.py:79(<lambda>)
+       20    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap>:162(__enter__)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:426(_get_module_lock)
+        8    0.000    0.000    0.000    0.000 <frozen abc>:105(__new__)
+        1    0.000    0.000    0.000    0.000 ssl.py:529(load_default_certs)
+       30    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:632(cached)
+        1    0.000    0.000    0.000    0.000 {method 'set_default_verify_paths' of '_ssl._SSLContext' objects}
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:482(cache_from_source)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:124(setdefault)
+      248    0.000    0.000    0.000    0.000 socket.py:84(<lambda>)
+1308/1303    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:611(_get_cached)
+      218    0.000    0.000    0.000    0.000 enum.py:79(_is_private)
+        1    0.000    0.000    0.000    0.000 __init__.py:2393(readprofile)
+      214    0.000    0.000    0.000    0.000 enum.py:38(_is_descriptor)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1585(_get_spec)
+      5/3    0.000    0.000    0.000    0.000 _compiler.py:37(_compile)
+      994    0.000    0.000    0.000    0.000 {method 'isupper' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:2357(_loadtk)
+      613    0.000    0.000    0.000    0.000 {built-in method builtins.getattr}
+        1    0.000    0.000    0.000    0.000 socket.py:500(close)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:420(__exit__)
+      896    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+      247    0.000    0.000    0.000    0.000 enum.py:48(_is_dunder)
+        1    0.000    0.000    0.000    0.000 ssl.py:1309(_real_close)
+      218    0.000    0.000    0.000    0.000 enum.py:59(_is_sunder)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:372(release)
+      331    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+      548    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+      212    0.000    0.000    0.000    0.000 types.py:192(__init__)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:802(spec_from_file_location)
+      831    0.000    0.000    0.000    0.000 {built-in method builtins.hasattr}
+      249    0.000    0.000    0.000    0.000 socket.py:89(<lambda>)
+      300    0.000    0.000    0.000    0.000 {method 'get' of 'mappingproxy' objects}
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:74(__new__)
+      622    0.000    0.000    0.000    0.000 {method 'rstrip' of 'str' objects}
+      250    0.000    0.000    0.000    0.000 socket.py:94(<lambda>)
+       10    0.000    0.000    0.000    0.000 {method '__exit__' of '_io._IOBase' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1641(_fill_cache)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:132(_path_split)
+        1    0.000    0.000    0.000    0.000 __init__.py:2264(wm_protocol)
+        1    0.000    0.000    0.000    0.000 selectors.py:588(_can_use)
+      336    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:491(_verbose_message)
+        1    0.000    0.000    0.000    0.000 {built-in method posix.listdir}
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:666(_classify_pyc)
+      4/3    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1390(_handle_fromlist)
+      126    0.000    0.000    0.000    0.000 ssl.py:135(<lambda>)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1453(_path_hooks)
+      126    0.000    0.000    0.000    0.000 ssl.py:130(<lambda>)
+        1    0.000    0.000    0.000    0.000 <frozen os>:44(_get_exports_list)
+      126    0.000    0.000    0.000    0.000 ssl.py:125(<lambda>)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1202(path_stats)
+        1    0.000    0.000    0.000    0.000 socket.py:496(_real_close)
+       10    0.000    0.000    0.000    0.000 {method 'sort' of 'list' objects}
+        4    0.000    0.000    0.000    0.000 _compiler.py:386(_mk_bitmap)
+        1    0.000    0.000    0.000    0.000 {function socket.close at 0x105dd0900}
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:232(__init__)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:445(cb)
+      126    0.000    0.000    0.000    0.000 ssl.py:145(<lambda>)
+       20    0.000    0.000    0.000    0.000 {built-in method builtins.max}
+      126    0.000    0.000    0.000    0.000 ssl.py:150(<lambda>)
+        2    0.000    0.000    0.000    0.000 _compiler.py:391(_bytes_to_codes)
+      126    0.000    0.000    0.000    0.000 ssl.py:140(<lambda>)
+        2    0.000    0.000    0.000    0.000 socket.py:221(__init__)
+      127    0.000    0.000    0.000    0.000 {method 'rpartition' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 enum.py:500(__prepare__)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1128(find_spec)
+        1    0.000    0.000    0.000    0.000 __init__.py:2456(pack_configure)
+        2    0.000    0.000    0.000    0.000 {method 'getvar' of '_tkinter.tkapp' objects}
+        6    0.000    0.000    0.000    0.000 enum.py:383(__setitem__)
+       30    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:84(_unpack_uint32)
+        8    0.000    0.000    0.000    0.000 {built-in method _abc._abc_init}
+        4    0.000    0.000    0.000    0.000 <frozen genericpath>:27(isfile)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:185(_path_abspath)
+        1    0.000    0.000    0.000    0.000 selectors.py:80(BaseSelector)
+        1    0.000    0.000    0.000    0.000 __init__.py:668(Misc)
+        1    0.000    0.000    0.000    0.000 ssl.py:415(Purpose)
+        6    0.000    0.000    0.000    0.000 enum.py:1541(__and__)
+       66    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:67(_relax_case)
+       15    0.000    0.000    0.000    0.000 {method 'update' of 'dict' objects}
+       69    0.000    0.000    0.000    0.000 {method 'get' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.dir}
+        2    0.000    0.000    0.000    0.000 __init__.py:1411(bind)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:699(_validate_timestamp_pyc)
+       60    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1226(__exit__)
+        2    0.000    0.000    0.000    0.000 {method 'cast' of 'memoryview' objects}
+      212    0.000    0.000    0.000    0.000 enum.py:236(__set_name__)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:82(remove)
+        1    0.000    0.000    0.000    0.000 ssl.py:944(SSLSocket)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:982(find_spec)
+       21    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:180(_path_isabs)
+        2    0.000    0.000    0.000    0.000 __init__.py:1393(_bind)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:645(parent)
+        1    0.000    0.000    0.000    0.000 <frozen zipimport>:64(__init__)
+        1    0.000    0.000    0.000    0.000 ssl.py:422(SSLContext)
+        3    0.000    0.000    0.000    0.000 __init__.py:1588(_register)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:79(__init__)
+      100    0.000    0.000    0.000    0.000 {built-in method _imp.acquire_lock}
+       25    0.000    0.000    0.000    0.000 {method 'pop' of 'dict' objects}
+       60    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:1222(__enter__)
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+       34    0.000    0.000    0.000    0.000 {method 'endswith' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1682(path_hook_for_FileFinder)
+        3    0.000    0.000    0.000    0.000 {method 'gettimeout' of '_socket.socket' objects}
+       21    0.000    0.000    0.000    0.000 _parser.py:240(__next)
+       40    0.000    0.000    0.000    0.000 {method '__exit__' of '_thread.RLock' objects}
+      5/3    0.000    0.000    0.000    0.000 _compiler.py:436(_get_literal_prefix)
+        1    0.000    0.000    0.000    0.000 idna.py:155(encode)
+      100    0.000    0.000    0.000    0.000 {built-in method _imp.release_lock}
+       40    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:134(<genexpr>)
+        9    0.000    0.000    0.000    0.000 enum.py:713(__call__)
+      7/5    0.000    0.000    0.000    0.000 _parser.py:178(getwidth)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:173(__exit__)
+      210    0.000    0.000    0.000    0.000 enum.py:1172(__init__)
+       20    0.000    0.000    0.000    0.000 _parser.py:256(match)
+        2    0.000    0.000    0.000    0.000 enum.py:954(_get_mixins_)
+       20    0.000    0.000    0.000    0.000 {built-in method _imp.is_builtin}
+       36    0.000    0.000    0.000    0.000 {built-in method builtins.issubclass}
+        3    0.000    0.000    0.000    0.000 <frozen os>:680(__getitem__)
+      104    0.000    0.000    0.000    0.000 enum.py:929(<lambda>)
+        2    0.000    0.000    0.000    0.000 __init__.py:1543(_options)
+        1    0.000    0.000    0.000    0.000 {method 'split' of 'bytes' objects}
+        5    0.000    0.000    0.000    0.000 {method 'createcommand' of '_tkinter.tkapp' objects}
+        2    0.000    0.000    0.000    0.000 _parser.py:98(closegroup)
+        2    0.000    0.000    0.000    0.000 enum.py:995(_find_data_type_)
+        4    0.000    0.000    0.000    0.000 {method 'format' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 <frozen abc>:110(register)
+       20    0.000    0.000    0.000    0.000 {built-in method _imp.find_frozen}
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:643(_check_name_wrapper)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:48(_new_module)
+        1    0.000    0.000    0.000    0.000 selectors.py:206(_BaseSelectorImpl)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1564(__init__)
+       22    0.000    0.000    0.000    0.000 {method 'find' of 'bytearray' objects}
+       40    0.000    0.000    0.000    0.000 {built-in method _thread.get_ident}
+        6    0.000    0.000    0.000    0.000 _compiler.py:216(_compile_charset)
+        1    0.000    0.000    0.000    0.000 ssl.py:783(SSLObject)
+        4    0.000    0.000    0.000    0.000 <frozen posixpath>:71(join)
+        3    0.000    0.000    0.000    0.000 __init__.py:102(_cnfmerge)
+        1    0.000    0.000    0.000    0.000 {built-in method _abc._abc_register}
+       16    0.000    0.000    0.000    0.000 _parser.py:261(get)
+       20    0.000    0.000    0.000    0.000 {built-in method _thread.allocate_lock}
+       10    0.000    0.000    0.000    0.000 {method 'extend' of 'list' objects}
+       15    0.000    0.000    0.000    0.000 ssl.py:938(_sslcopydoc)
+      2/1    0.000    0.000    0.000    0.000 <frozen abc>:121(__subclasscheck__)
+       42    0.000    0.000    0.000    0.000 enum.py:93(_is_single_bit)
+        9    0.000    0.000    0.000    0.000 _parser.py:168(__getitem__)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:804(get)
+        7    0.000    0.000    0.000    0.000 {built-in method builtins.delattr}
+        1    0.000    0.000    0.000    0.000 __init__.py:43(normalize_encoding)
+       23    0.000    0.000    0.000    0.000 {method 'rfind' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:3616(Text)
+       20    0.000    0.000    0.000    0.000 {built-in method _weakref._remove_dead_weakref}
+       33    0.000    0.000    0.000    0.000 {method 'items' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:2751(Canvas)
+        2    0.000    0.000    0.000    0.000 {method 'settimeout' of '_socket.socket' objects}
+        3    0.000    0.000    0.000    0.000 _parser.py:449(_uniq)
+        1    0.000    0.000    0.000    0.000 idna.py:308(getregentry)
+       30    0.000    0.000    0.000    0.000 {built-in method from_bytes}
+       23    0.000    0.000    0.000    0.000 {built-in method sys.intern}
+       46    0.000    0.000    0.000    0.000 {built-in method posix.fspath}
+       20    0.000    0.000    0.000    0.000 {method 'remove' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:2016(Wm)
+        1    0.000    0.000    0.000    0.000 <frozen _collections_abc>:811(__contains__)
+      2/1    0.000    0.000    0.000    0.000 {built-in method _abc._abc_subclasscheck}
+       22    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 socket.py:215(socket)
+       11    0.000    0.000    0.000    0.000 enum.py:815(__members__)
+        1    0.000    0.000    0.000    0.000 {method 'getpeername' of '_socket.socket' objects}
+        3    0.000    0.000    0.000    0.000 <frozen os>:762(encode)
+        1    0.000    0.000    0.000    0.000 {method 'getsockopt' of '_socket.socket' objects}
+       11    0.000    0.000    0.000    0.000 {method 'setter' of 'property' objects}
+        1    0.000    0.000    0.000    0.000 socket.py:516(family)
+       27    0.000    0.000    0.000    0.000 {method 'add' of 'set' objects}
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:599(__init__)
+       10    0.000    0.000    0.000    0.000 {built-in method builtins.min}
+        1    0.000    0.000    0.000    0.000 __init__.py:3351(Menu)
+        9    0.000    0.000    0.000    0.000 enum.py:1116(__new__)
+        1    0.000    0.000    0.000    0.000 ssl.py:670(verify_mode)
+        1    0.000    0.000    0.000    0.000 <frozen posixpath>:169(basename)
+        1    0.000    0.000    0.000    0.000 browser.py:21(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:2606(_setup)
+        7    0.000    0.000    0.000    0.000 enum.py:772(__delattr__)
+        1    0.000    0.000    0.000    0.000 __init__.py:3105(Entry)
+        3    0.000    0.000    0.000    0.000 _parser.py:231(__init__)
+       23    0.000    0.000    0.000    0.000 {method '__contains__' of 'frozenset' objects}
+       23    0.000    0.000    0.000    0.000 {method 'isidentifier' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 enum.py:1022(_find_new_)
+       16    0.000    0.000    0.000    0.000 {method 'items' of 'mappingproxy' objects}
+       15    0.000    0.000    0.000    0.000 enum.py:1666(_simple_enum)
+       40    0.000    0.000    0.000    0.000 enum.py:807(<genexpr>)
+        4    0.000    0.000    0.000    0.000 <string>:1(<lambda>)
+        1    0.000    0.000    0.000    0.000 <frozen posixpath>:117(splitext)
+       23    0.000    0.000    0.000    0.000 __init__.py:429(<genexpr>)
+        2    0.000    0.000    0.000    0.000 socket.py:100(_intenum_converter)
+       10    0.000    0.000    0.000    0.000 _parser.py:293(tell)
+        1    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:164(_path_isdir)
+        3    0.000    0.000    0.000    0.000 _compiler.py:467(_get_charset_prefix)
+        1    0.000    0.000    0.000    0.000 __init__.py:3235(Listbox)
+        1    0.000    0.000    0.000    0.000 ssl.py:678(verify_mode)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:412(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:2548(Grid)
+        2    0.000    0.000    0.000    0.000 _parser.py:86(opengroup)
+       10    0.000    0.000    0.000    0.000 _parser.py:83(groups)
+        1    0.000    0.000    0.000    0.000 __init__.py:4242(Spinbox)
+       10    0.000    0.000    0.000    0.000 {built-in method _imp._fix_co_filename}
+        1    0.000    0.000    0.000    0.000 constants.py:1(<module>)
+        2    0.000    0.000    0.000    0.000 {method 'tolist' of 'memoryview' objects}
+        1    0.000    0.000    0.000    0.000 socket.py:506(detach)
+        1    0.000    0.000    0.000    0.000 enum.py:944(_check_for_existing_members_)
+        4    0.000    0.000    0.000    0.000 enum.py:803(__iter__)
+        3    0.000    0.000    0.000    0.000 {built-in method _sre.compile}
+        1    0.000    0.000    0.000    0.000 __init__.py:367(Variable)
+        1    0.000    0.000    0.000    0.000 <frozen codecs>:94(__new__)
+        5    0.000    0.000    0.000    0.000 <frozen posixpath>:41(_get_sep)
+        5    0.000    0.000    0.000    0.000 _parser.py:176(append)
+        4    0.000    0.000    0.000    0.000 {method 'split' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 ssl.py:394(_ASN1Object)
+        1    0.000    0.000    0.000    0.000 __init__.py:4138(PhotoImage)
+        4    0.000    0.000    0.000    0.000 {method 'translate' of 'bytearray' objects}
+        1    0.000    0.000    0.000    0.000 socket.py:664(SocketIO)
+        1    0.000    0.000    0.000    0.000 browser.py:188(Browser)
+        4    0.000    0.000    0.000    0.000 {built-in method builtins.sorted}
+        6    0.000    0.000    0.000    0.000 enum.py:70(_is_internal_class)
+        6    0.000    0.000    0.000    0.000 _compiler.py:570(isstring)
+       17    0.000    0.000    0.000    0.000 {method 'lower' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {method 'close' of 'select.kqueue' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:2320(Tk)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:158(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:170(EventType)
+        3    0.000    0.000    0.000    0.000 _parser.py:953(fix_flags)
+        3    0.000    0.000    0.000    0.000 {built-in method fromkeys}
+        2    0.000    0.000    0.000    0.000 _parser.py:312(_class_escape)
+        1    0.000    0.000    0.000    0.000 enum.py:376(__init__)
+        1    0.000    0.000    0.000    0.000 <frozen genericpath>:133(_splitext)
+        1    0.000    0.000    0.000    0.000 selectors.py:290(SelectSelector)
+        1    0.000    0.000    0.000    0.000 browser.py:13(URL)
+        1    0.000    0.000    0.000    0.000 ssl.py:159(TLSVersion)
+       20    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap>:653(has_location)
+        1    0.000    0.000    0.000    0.000 __init__.py:2451(Pack)
+        1    0.000    0.000    0.000    0.000 socket.py:522(type)
+        1    0.000    0.000    0.000    0.000 selectors.py:506(KqueueSelector)
+        2    0.000    0.000    0.000    0.000 <frozen os>:766(decode)
+        1    0.000    0.000    0.000    0.000 ssl.py:185(_TLSAlertType)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1153(__init__)
+        6    0.000    0.000    0.000    0.000 _compiler.py:31(_combine_flags)
+        1    0.000    0.000    0.000    0.000 __init__.py:4023(_setit)
+        1    0.000    0.000    0.000    0.000 __init__.py:3061(Checkbutton)
+        5    0.000    0.000    0.000    0.000 _parser.py:164(__len__)
+        1    0.000    0.000    0.000    0.000 selectors.py:341(_PollLikeSelector)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1276(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:4444(PanedWindow)
+        1    0.000    0.000    0.000    0.000 enum.py:973(_find_data_repr_)
+        4    0.000    0.000    0.000    0.000 {built-in method sys._getframemodulename}
+        2    0.000    0.000    0.000    0.000 enum.py:197(__get__)
+        8    0.000    0.000    0.000    0.000 _compiler.py:428(_get_iscased)
+        3    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.repr}
+        1    0.000    0.000    0.000    0.000 ssl.py:227(_TLSMessageType)
+        4    0.000    0.000    0.000    0.000 <frozen abc>:7(abstractmethod)
+        1    0.000    0.000    0.000    0.000 __init__.py:4076(Image)
+        3    0.000    0.000    0.000    0.000 __init__.py:1956(__init__)
+        1    0.000    0.000    0.000    0.000 selectors.py:433(PollSelector)
+        1    0.000    0.000    0.000    0.000 __init__.py:2497(Place)
+        1    0.000    0.000    0.000    0.000 selectors.py:60(_SelectorMapping)
+        2    0.000    0.000    0.000    0.000 {built-in method maketrans}
+        3    0.000    0.000    0.000    0.000 _parser.py:77(__init__)
+        5    0.000    0.000    0.000    0.000 _parser.py:113(__init__)
+        3    0.000    0.000    0.000    0.000 {method 'setdefault' of 'dict' objects}
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:986(create_module)
+        3    0.000    0.000    0.000    0.000 {method 'decode' of 'bytes' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method _tkinter._flatten}
+        8    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1570(<genexpr>)
+       10    0.000    0.000    0.000    0.000 <frozen importlib._bootstrap_external>:1178(get_filename)
+        6    0.000    0.000    0.000    0.000 {built-in method builtins.ord}
+        1    0.000    0.000    0.000    0.000 __init__.py:2603(BaseWidget)
+        3    0.000    0.000    0.000    0.000 {built-in method builtins.id}
+        4    0.000    0.000    0.000    0.000 {method 'bit_length' of 'int' objects}
+        4    0.000    0.000    0.000    0.000 {method 'isalnum' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:213(Event)
+        1    0.000    0.000    0.000    0.000 __init__.py:3566(Scrollbar)
+        1    0.000    0.000    0.000    0.000 __init__.py:3527(Scale)
+        1    0.000    0.000    0.000    0.000 __init__.py:548(StringVar)
+        2    0.000    0.000    0.000    0.000 <frozen _collections_abc>:341(__subclasshook__)
+        1    0.000    0.000    0.000    0.000 __init__.py:618(BooleanVar)
+        1    0.000    0.000    0.000    0.000 __init__.py:1974(XView)
+        1    0.000    0.000    0.000    0.000 idna.py:154(Codec)
+        5    0.000    0.000    0.000    0.000 {built-in method builtins.callable}
+        1    0.000    0.000    0.000    0.000 __init__.py:147(_VersionInfoType)
+        1    0.000    0.000    0.000    0.000 __init__.py:3494(Radiobutton)
+        2    0.000    0.000    0.000    0.000 {method 'pop' of 'set' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:572(IntVar)
+        1    0.000    0.000    0.000    0.000 ssl.py:170(_TLSContentType)
+        1    0.000    0.000    0.000    0.000 __init__.py:597(DoubleVar)
+        1    0.000    0.000    0.000    0.000 __init__.py:2704(Button)
+        1    0.000    0.000    0.000    0.000 ssl.py:1087(_check_connected)
+        1    0.000    0.000    0.000    0.000 __init__.py:1995(YView)
+        4    0.000    0.000    0.000    0.000 {method 'isascii' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:4037(OptionMenu)
+        1    0.000    0.000    0.000    0.000 __init__.py:1952(CallWrapper)
+        1    0.000    0.000    0.000    0.000 __init__.py:2674(Toplevel)
+        1    0.000    0.000    0.000    0.000 idna.py:226(IncrementalEncoder)
+        2    0.000    0.000    0.000    0.000 enum.py:246(__init__)
+        1    0.000    0.000    0.000    0.000 __init__.py:3480(Menubutton)
+        1    0.000    0.000    0.000    0.000 <string>:1(<module>)
+        1    0.000    0.000    0.000    0.000 __init__.py:4420(LabelFrame)
+        1    0.000    0.000    0.000    0.000 __init__.py:3191(Frame)
+        1    0.000    0.000    0.000    0.000 {method 'fileno' of '_socket.socket' objects}
+        1    0.000    0.000    0.000    0.000 __init__.py:4222(BitmapImage)
+        1    0.000    0.000    0.000    0.000 idna.py:261(IncrementalDecoder)
+        1    0.000    0.000    0.000    0.000 idna.py:300(StreamWriter)
+        1    0.000    0.000    0.000    0.000 browser.py:159(RedirectLoopError)
+        1    0.000    0.000    0.000    0.000 __init__.py:3487(Message)
+        1    0.000    0.000    0.000    0.000 __init__.py:3211(Label)
+        1    0.000    0.000    0.000    0.000 enum.py:1279(value)
+        1    0.000    0.000    0.000    0.000 {function socket.detach at 0x105dd09a0}
+        1    0.000    0.000    0.000    0.000 socket.py:212(_GiveupOnSendfile)
+        1    0.000    0.000    0.000    0.000 idna.py:303(StreamReader)
+        1    0.000    0.000    0.000    0.000 {built-in method builtins.globals}
+        1    0.000    0.000    0.000    0.000 __init__.py:2666(Widget)
+
+

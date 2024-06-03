@@ -1,0 +1,97 @@
+import dukpy
+from cssparser import *
+from url import *
+
+RUNTIME_JS = open("runtime.js").read()
+EVENT_DISPATCH_JS = \
+    "new Node(dukpy.handle).dispatchEvent(new Event(dukpy.type))"
+
+class JSContext:
+    def __init__(self, tab):
+        self.interp = dukpy.JSInterpreter()
+        self.interp.export_function("log", print)
+        self.interp.evaljs(RUNTIME_JS)
+        self.interp.export_function("querySelectorAll",
+            self.querySelectorAll)
+        self.tab = tab
+        self.node_to_handle = {}
+        self.handle_to_node = {}
+
+        self.interp.export_function("getAttribute", self.getAttribute)
+        self.interp.export_function("innerHTML_set", self.innerHTML_set)
+        self.interp.export_function("XMLHttpRequest_send", self.XMLHttpRequest_send)
+        self.interp.export_function("document_get_cookie", self.document_get_cookie)
+        self.interp.export_function("document_set_cookie", self.document_set_cookie)
+
+
+    def run(self, code):
+        return self.interp.evaljs(code)
+    
+    def get_handle(self, elt):
+        if elt not in self.node_to_handle:
+            handle = len(self.node_to_handle)
+            self.node_to_handle[elt] = handle
+            self.handle_to_node[handle] = elt
+        else:
+            handle = self.node_to_handle[elt]
+        return handle
+    
+    def querySelectorAll(self, selector_text):
+        selector = CSSParser(selector_text).selector()
+        nodes = [node for node
+             in tree_to_list(self.tab.nodes, [])
+             if selector.matches(node)]
+        return [self.get_handle(node) for node in nodes]
+    
+    def getAttribute(self, handle, attr):
+        elt = self.handle_to_node[handle]
+        attr = elt.attributes.get(attr, None)
+        return attr if attr else ""
+    
+    def dispatch_event(self, type, elt):
+        handle = self.node_to_handle.get(elt, -1)
+        do_default = self.interp.evaljs(
+            EVENT_DISPATCH_JS, type=type, handle=handle)
+        return not do_default
+
+    def innerHTML_set(self, handle, s):
+        doc = HTMLParser("<html><body>" + s + "</body></html>").parse()
+        new_nodes = doc.children[0].children
+        elt = self.handle_to_node[handle]
+        elt.children = new_nodes
+        for child in elt.children:
+            child.parent = elt
+        self.tab.render()
+
+    def XMLHttpRequest_send(self, method, url, body):
+        full_url = self.tab.url.resolve(url)
+        if not self.tab.allowed_request(full_url):
+            raise Exception("Cross-origin XHR blocked by CSP")
+        headers, out = full_url.request(self.tab.url, body)
+        if full_url.origin() != self.tab.url.origin():
+            raise Exception("Cross-origin XHR request not allowed")
+        return out
+
+    # Ch10 script access 
+    def document_get_cookie(self):
+        if not COOKIE_JAR or self.tab.url.host not in COOKIE_JAR: 
+            return ""
+        else:
+            cookie, params = COOKIE_JAR[self.tab.url.host]
+            if "httponly" in params:
+                return ""
+            return cookie
+
+    def document_set_cookie(self, cookie):
+        if self.tab.url.host in COOKIE_JAR:
+            cookies, new_params = COOKIE_JAR[self.tab.url.host]
+            if "httponly" in new_params:
+                return
+        cookie, params = self.tab.url.get_cookie(cookie)
+        COOKIE_JAR[self.tab.url.host] = (cookie, params)
+
+def tree_to_list(tree, list):
+    list.append(tree)
+    for child in tree.children:
+        tree_to_list(child, list)
+    return list
