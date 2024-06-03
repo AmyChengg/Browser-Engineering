@@ -1,14 +1,7 @@
-# # Chapter 6 core
-# # CSS Grammar
-# # css file ::= sequence of rules
-# # rule ::= guard selector '{'body'}'
-# # body ::= sequence of pair separated by ';'
-# # pair ::= word ':' word
-
+# Chapter 6 base code
 import tkinter
 import tkinter.font
 from htmlparser import *
-
 
 INHERITED_PROPERTIES = {
     "font-size": "16px",
@@ -17,7 +10,6 @@ INHERITED_PROPERTIES = {
     "font-weight": "normal",
     "color": "black",
 }
-
 
 class TagSelector:
     def __init__(self, tag):
@@ -31,7 +23,6 @@ class TagSelector:
         return "TagSelector(tag={}, priority={})".format(
             self.tag, self.priority
         )
-
 
 class DescendantSelector:
     def __init__(self, ancestor, descendant):
@@ -53,7 +44,7 @@ class DescendantSelector:
             "DescendantSelector(ancestor={}, descendant={}, priority={})"
         ).format(self.ancestor, self.descendant, self.priority)
     
-# Ch6-class-selectors-exercise
+# Ch6 class selectors exercise
 class ClassSelector:
     def __init__(self, classname, priority=10):
         self.classname = classname
