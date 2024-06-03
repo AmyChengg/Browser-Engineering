@@ -1,4 +1,3 @@
-# Chapter 3
 import math
 import tkinter
 import tkinter.font
@@ -9,7 +8,6 @@ WIDTH, HEIGHT = 800, 600
 HSTEP, VSTEP = 13, 18
 SCROLL_STEP = 100
 
-# Chapter3-exercise-centered-text
 def set_parameters(**params):
     global WIDTH, HEIGHT, HSTEP, VSTEP, SCROLL_STEP
     if "WIDTH" in params: WIDTH = params["WIDTH"]
@@ -173,7 +171,7 @@ class BlockLayout:
             previous = None
             siblings = []
             for child in self.node.children:
-                if isinstance(child, Element): # and child.tag == 'head':
+                if isinstance(child, Element): 
                     if child.tag == 'head':
                         continue
 
@@ -204,9 +202,6 @@ class BlockLayout:
             self.center = False
             self.superscript = False
             self.abbr = False
-            # self.big = False
-
-            # self.list = False #Chapter5-hidden-head
 
             self.line = []
 
@@ -250,10 +245,6 @@ class BlockLayout:
 
         if self.layout_mode() == "inline":
             for x, y, word, font in self.display_list:
-                # if self.list:
-                #     cmds.append(DrawRect(x + 4, y + 4, x + 4, y + 4, "black"))
-                #     cmds.append(DrawText(x + 2 * HSTEP, y, word, font))
-                # else:
                 cmds.append(DrawText(x, y, word, font))
         
         return cmds
