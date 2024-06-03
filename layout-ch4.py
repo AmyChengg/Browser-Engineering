@@ -18,12 +18,6 @@ def set_parameters(**params):
     if "VSTEP" in params: VSTEP = params["VSTEP"]
     if "SCROLL_STEP" in params: SCROLL_STEP = params["SCROLL_STEP"]
 
-# Helper classes for chapter 3
-# class Text:
-#     def __init__(self, text):
-#         self.text = text
-#     def __repr__(self):
-#         return "Text('{}')".format(self.text)
 
 class Tag:
     def __init__(self, tag):
@@ -47,8 +41,6 @@ class Layout:
         self.display_list = []
         self.cursor_x = hstep()
         self.cursor_y = vstep()
-        # self.cursor_x = HSTEP
-        # self.cursor_y = VSTEP
         self.weight = "normal"
         self.style = "roman"
         self.size = 16
