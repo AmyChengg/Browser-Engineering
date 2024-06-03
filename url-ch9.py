@@ -121,5 +121,4 @@ def tree_to_list(tree, list):
         tree_to_list(child, list)
     return list
     
-# Exercise chapter 1 Redirects
 class RedirectLoopError(Exception): pass
