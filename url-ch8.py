@@ -22,12 +22,11 @@ class URL:
     def __init__(self, url, redirect=0) -> None:
         self.scheme, url = url.split("://", 1)
 
-        # Exercise-redirect
+        # Redirect exercise
         self.redirect = redirect
         if (self.redirect >= 10):
             raise RedirectLoopError(Exception("Too many redirects"))
         
-        # Chapter 1 exercise-file-urls
         assert self.scheme in ("http", "https", "file")
 
         if self.scheme == "http":
@@ -69,15 +68,6 @@ class URL:
             proto=socket.IPPROTO_TCP,
         )
         s.connect((self.host, self.port))
-
-        # texts = ""
-        # if self.scheme:
-        #     texts += self.scheme
-        # if self.host:
-        #     texts += self.host 
-        # if self.port:
-        #     texts += str(self.port)
-        # texts += self.path 
     
         if self.scheme == "https":
             ctx = ssl.create_default_context()
@@ -111,7 +101,6 @@ class URL:
         s.close()
         return content
     
-    # Chapter 6 core: resolving parent directories (..) in relative URLs
     def resolve(self, url):
         if "://" in url: return URL(url)
         if not url.startswith("/"):
@@ -133,5 +122,4 @@ def tree_to_list(tree, list):
         tree_to_list(child, list)
     return list
     
-# Exercise chapter 1 Redirects
 class RedirectLoopError(Exception): pass
