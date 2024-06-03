@@ -72,7 +72,7 @@ class JSContext:
             raise Exception("Cross-origin XHR request not allowed")
         return out
 
-    # Ch10 script access 
+    # Ch10 script access exercise
     def document_get_cookie(self):
         if not COOKIE_JAR or self.tab.url.host not in COOKIE_JAR: 
             return ""
