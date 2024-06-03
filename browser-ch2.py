@@ -1,13 +1,3 @@
-# need to set up python environment in terminal to test code:
-# cse493x-24sp-amyc1 python3 browser.py https://example.org
-# python3 browser.py https://browser.engineering/examples/xiyouji.html
-
-#test on terminal: python3 tests/run.py
-
-# !/usr/bin/env python3
-# python 3.12 virtual env: usr/bin/local/env python3
-
-# Request on terminal:
 # HTTP/1.0 200 OK
 # Age: 236949
 # Cache-Control: max-age=604800
@@ -207,16 +197,9 @@ class Browser:
         
         self.scroll = 0
         self.window.bind("<Down>", self.scrolldown) # allows user to scroll with down arrow key
-        # self.window.bind("<Up>", self.scrollup)
-        # self.window.bind("<MouseWheel>", self.scrollwheel)
-        # Exercise-resizing chapter2-3
         self.body = ""
         self.canvas.pack(fill='both', expand=1)
         self.window.bind("<Configure>", self.resize)
-
-        # self.WIDTH = WIDTH
-        # self.HEIGHT = HEIGHT
-        # self.HSTEP = HSTEP
 
         # exercise emoji
         emojiglobal['1F600'] = tkinter.PhotoImage(file='openmoji/1F600.png')
@@ -236,19 +219,6 @@ class Browser:
         self.scroll += SCROLL_STEP
         self.draw()
 
-    #event handler
-    # def scrollup(self, e):
-    #     self.scroll -= SCROLL_STEP
-    #     self.draw()
-
-    # optional chapter 2 exercise
-    '''
-    def scrollwheel(self, event):
-        global SCROLL_STEP
-        print(event)
-        self.update_scroll(event.delta * SCROLL_STEP)
-    '''
-
     def load(self, url):
         body = url.request()
         text = lex(body)
@@ -258,7 +228,7 @@ class Browser:
         self.body = text # resize exercise
 
     # draw needs to loop through it and draw each character. Since draw does need access to the canvas
-    # The page coordinate y then has screen coordinate y - self.scroll:
+    # The page coordinate y then has screen coordinate y - self.scroll
     def draw(self):
         self.canvas.delete("all") # erase old texts when scrolling
 
@@ -319,9 +289,6 @@ def layout(text):
                 cursor_y += VSTEP
                 cursor_x = HSTEP
     return display_list
-
-# to check optimization on terminal: python -m cProfile browser.py https://browser.engineering/examples/xiyouji.html > profile.txt
-# then open profile.txt in tests folder and find "draw" = 0.05ms per call
     
 # display HTML text
 def lex(body):
@@ -340,7 +307,6 @@ def lex(body):
 
 if __name__ == "__main__":
     import sys
-    # load(URL(sys.argv[1]))
 
         # The first line is Python’s version of a main function, run only 
         # when executing this script from the command line. The code reads
